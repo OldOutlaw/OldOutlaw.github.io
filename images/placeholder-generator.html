@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .placeholder {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            background: linear-gradient(135deg, #d4af37, #f4e4bc);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10,6 C6,2 2,6 6,10 C2,6 6,2 10,6 C14,2 18,6 14,10 C18,6 14,2 10,6 Z" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+        .placeholder-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .hero-bg { width: 800px; height: 600px; }
+        .portfolio-thumb { width: 350px; height: 250px; }
+        .about-photo { width: 400px; height: 500px; }
+        .testimonial-photo { width: 60px; height: 60px; border-radius: 50%; }
+        
+        h1 { text-align: center; color: #333; }
+        .section { margin: 40px 0; }
+        .section h2 { color: #d4af37; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Wedding Portfolio Placeholder Images</h1>
+    
+    <div class="section">
+        <h2>Hero Background</h2>
+        <div class="placeholder hero-bg">
+            <div class="placeholder-content">
+                <h2>Wedding Video Background</h2>
+                <p>Romantic Couple Scene</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Portfolio Thumbnails</h2>
+        <div class="placeholder portfolio-thumb">
+            <div class="placeholder-content">
+                <h3>Sarah & Michael</h3>
+                <p>Garden Wedding</p>
+            </div>
+        </div>
+        <div class="placeholder portfolio-thumb">
+            <div class="placeholder-content">
+                <h3>Emma & James</h3>
+                <p>Church Ceremony</p>
+            </div>
+        </div>
+        <div class="placeholder portfolio-thumb">
+            <div class="placeholder-content">
+                <h3>Lisa & David</h3>
+                <p>Beach Reception</p>
+            </div>
+        </div>
+        <div class="placeholder portfolio-thumb">
+            <div class="placeholder-content">
+                <h3>Anna & Robert</h3>
+                <p>Barn Wedding</p>
+            </div>
+        </div>
+        <div class="placeholder portfolio-thumb">
+            <div class="placeholder-content">
+                <h3>Grace & Thomas</h3>
+                <p>Chapel Wedding</p>
+            </div>
+        </div>
+        <div class="placeholder portfolio-thumb">
+            <div class="placeholder-content">
+                <h3>Sophia & Daniel</h3>
+                <p>City Reception</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>About Photo</h2>
+        <div class="placeholder about-photo">
+            <div class="placeholder-content">
+                <h3>Elena Rose</h3>
+                <p>Wedding Videographer</p>
+                <p>Professional Portrait</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Testimonial Photos</h2>
+        <div class="placeholder testimonial-photo">
+            <div class="placeholder-content">
+                <small>S&M</small>
+            </div>
+        </div>
+        <div class="placeholder testimonial-photo">
+            <div class="placeholder-content">
+                <small>E&J</small>
+            </div>
+        </div>
+        <div class="placeholder testimonial-photo">
+            <div class="placeholder-content">
+                <small>L&D</small>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 40px; padding: 20px; background: white; border-radius: 8px;">
+        <h3>Instructions:</h3>
+        <p>These are placeholder images for the wedding portfolio website. In a real implementation, you would:</p>
+        <ul>
+            <li>Replace the hero video with an actual wedding video file</li>
+            <li>Use real wedding photography thumbnails for the portfolio section</li>
+            <li>Add a professional headshot for the about section</li>
+            <li>Include actual couple photos for testimonials</li>
+        </ul>
+        <p><strong>Note:</strong> The website is fully functional with these placeholders and will display properly when opened in a browser.</p>
+    </div>
+</body>
+</html>

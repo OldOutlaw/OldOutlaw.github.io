@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Rose Films - Wedding Videography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Elena Rose Films</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <div class="hero-placeholder"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Capturing Love Stories</h1>
+            <p class="hero-subtitle">Cinematic wedding films that tell your unique story</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work</h2>
+                <p class="section-subtitle">Every love story deserves to be told beautifully</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ceremony">Ceremony</button>
+                <button class="filter-btn" data-filter="reception">Reception</button>
+                <button class="filter-btn" data-filter="highlights">Highlights</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="highlights">
+                    <div class="portfolio-video">
+                        <img src="images/portfolio/wedding1-thumb.jpg" alt="Sarah & Michael Wedding">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sarah & Michael</h3>
+                        <p>Romantic Garden Wedding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ceremony">
+                    <div class="portfolio-video">
+                        <img src="images/portfolio/wedding2-thumb.jpg" alt="Emma & James Wedding">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Emma & James</h3>
+                        <p>Elegant Church Ceremony</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="reception">
+                    <div class="portfolio-video">
+                        <img src="images/portfolio/wedding3-thumb.jpg" alt="Lisa & David Wedding">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Lisa & David</h3>
+                        <p>Beachside Reception</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="highlights">
+                    <div class="portfolio-video">
+                        <img src="images/portfolio/wedding4-thumb.jpg" alt="Anna & Robert Wedding">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Anna & Robert</h3>
+                        <p>Rustic Barn Wedding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ceremony">
+                    <div class="portfolio-video">
+                        <img src="images/portfolio/wedding5-thumb.jpg" alt="Grace & Thomas Wedding">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Grace & Thomas</h3>
+                        <p>Vintage Chapel Wedding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="reception">
+                    <div class="portfolio-video">
+                        <img src="images/portfolio/wedding6-thumb.jpg" alt="Sophia & Daniel Wedding">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sophia & Daniel</h3>
+                        <p>Modern City Reception</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Elena</h2>
+                    <p class="about-intro">
+                        With over 8 years of experience in wedding videography, I believe every love story is unique and deserves to be told with passion, creativity, and authenticity.
+                    </p>
+                    <p>
+                        My journey began when I filmed my best friend's wedding and realized the power of capturing those fleeting, precious moments that make each celebration special. Since then, I've had the honor of documenting over 200 weddings, each one teaching me something new about love, joy, and human connection.
+                    </p>
+                    <p>
+                        My approach is unobtrusive yet comprehensive, ensuring I capture both the grand moments and intimate details that make your day uniquely yours. I use state-of-the-art equipment and cinematic techniques to create films that feel like a beautiful dream you can relive forever.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>200+</h3>
+                            <p>Weddings Filmed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Happy Couples</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-photo.jpg" alt="Elena Rose - Wedding Videographer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Wedding Packages</h2>
+                <p class="section-subtitle">Choose the perfect package for your special day</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3>Essential</h3>
+                        <div class="price">$1,200</div>
+                    </div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 4 hours of coverage</li>
+                        <li><i class="fas fa-check"></i> Ceremony & reception highlights</li>
+                        <li><i class="fas fa-check"></i> 3-5 minute highlight reel</li>
+                        <li><i class="fas fa-check"></i> Online gallery delivery</li>
+                        <li><i class="fas fa-check"></i> Basic color correction</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-header">
+                        <h3>Premium</h3>
+                        <div class="price">$2,500</div>
+                    </div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 8 hours of coverage</li>
+                        <li><i class="fas fa-check"></i> Full ceremony & reception</li>
+                        <li><i class="fas fa-check"></i> 5-8 minute cinematic film</li>
+                        <li><i class="fas fa-check"></i> Raw footage included</li>
+                        <li><i class="fas fa-check"></i> Professional color grading</li>
+                        <li><i class="fas fa-check"></i> Custom music selection</li>
+                        <li><i class="fas fa-check"></i> USB drive delivery</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3>Luxury</h3>
+                        <div class="price">$4,000</div>
+                    </div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Full day coverage</li>
+                        <li><i class="fas fa-check"></i> Getting ready to send-off</li>
+                        <li><i class="fas fa-check"></i> 10-15 minute feature film</li>
+                        <li><i class="fas fa-check"></i> Multiple highlight reels</li>
+                        <li><i class="fas fa-check"></i> Drone footage included</li>
+                        <li><i class="fas fa-check"></i> Second videographer</li>
+                        <li><i class="fas fa-check"></i> Same-day preview</li>
+                        <li><i class="fas fa-check"></i> Premium packaging</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Couples Say</h2>
+                <p class="section-subtitle">Hear from our happy couples</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Elena captured our wedding day perfectly! The film she created brought tears to our eyes and allowed us to relive every magical moment. Her professionalism and artistic eye are unmatched."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/couple1.jpg" alt="Sarah & Michael">
+                            <div class="author-info">
+                                <h4>Sarah & Michael</h4>
+                                <span>June 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Working with Elena was an absolute dream. She was so unobtrusive during our ceremony, yet managed to capture every important moment. The final video exceeded all our expectations!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/couple2.jpg" alt="Emma & James">
+                            <div class="author-info">
+                                <h4>Emma & James</h4>
+                                <span>August 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Elena's attention to detail and creative vision made our wedding film feel like a Hollywood movie. We've watched it countless times and it never gets old. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/couple3.jpg" alt="Lisa & David">
+                            <div class="author-info">
+                                <h4>Lisa & David</h4>
+                                <span>September 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="nav-dot active" data-slide="0"></button>
+                <button class="nav-dot" data-slide="1"></button>
+                <button class="nav-dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Create Magic Together</h2>
+                <p class="section-subtitle">Ready to tell your love story?</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@elenarose.films</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Los Angeles, CA<br>Available for travel worldwide</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vimeo"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="wedding-date" name="wedding-date" placeholder="Wedding Date">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="venue" name="venue" placeholder="Wedding Venue">
+                    </div>
+                    <div class="form-group">
+                        <select id="package" name="package">
+                            <option value="">Select Package</option>
+                            <option value="essential">Essential - $1,200</option>
+                            <option value="premium">Premium - $2,500</option>
+                            <option value="luxury">Luxury - $4,000</option>
+                            <option value="custom">Custom Package</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your special day..." rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Elena Rose Films</h3>
+                    <p>Capturing love stories, one frame at a time</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elena Rose Films. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
