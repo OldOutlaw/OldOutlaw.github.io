@@ -47,9 +47,12 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-video">
-            <div class="hero-placeholder"></div>
-            <div class="hero-overlay"></div>
-        </div>
+    <video autoplay loop muted playsinline class="hero-background-video">
+        <source src="videos/Wedding_Video_Elegant_and_Joyful.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+</div>
         <div class="hero-content">
             <h1 class="hero-title">Capturing Love Stories</h1>
             <p class="hero-subtitle">Cinematic wedding films that tell your unique story</p>
@@ -65,100 +68,100 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Work</h2>
-                <p class="section-subtitle">Every love story deserves to be told beautifully</p>
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Work</h2>
+            <p class="section-subtitle">Every love story deserves to be told beautifully</p>
+        </div>
+
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ceremony">Ceremony</button>
+            <button class="filter-btn" data-filter="reception">Reception</button>
+            <button class="filter-btn" data-filter="highlights">Highlights</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="highlights">
+                <div class="portfolio-video">
+                    <video autoplay loop muted playsinline class="portfolio-video-player">
+                        <source src="videos/Wedding_Video_Joyful_Celebration.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Sarah & Michael</h3>
+                    <p>Romantic Garden Wedding</p>
+                </div>
             </div>
-            
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ceremony">Ceremony</button>
-                <button class="filter-btn" data-filter="reception">Reception</button>
-                <button class="filter-btn" data-filter="highlights">Highlights</button>
+
+            <div class="portfolio-item" data-category="ceremony">
+                <div class="portfolio-video">
+                    <video autoplay loop muted playsinline class="portfolio-video-player">
+                        <source src="videos/Wedding_Video_Concept_Generated.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Emma & James</h3>
+                    <p>Elegant Church Ceremony</p>
+                </div>
             </div>
 
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="highlights">
-                    <div class="portfolio-video">
-                        <img src="images/portfolio/wedding1-thumb.jpg" alt="Sarah & Michael Wedding">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Sarah & Michael</h3>
-                        <p>Romantic Garden Wedding</p>
-                    </div>
+            <div class="portfolio-item" data-category="reception">
+                <div class="portfolio-video">
+                    <video autoplay loop muted playsinline class="portfolio-video-player">
+                        <source src="videos/Wedding_Reception_Video_Ready.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
                 </div>
-
-                <div class="portfolio-item" data-category="ceremony">
-                    <div class="portfolio-video">
-                        <img src="images/portfolio/wedding2-thumb.jpg" alt="Emma & James Wedding">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Emma & James</h3>
-                        <p>Elegant Church Ceremony</p>
-                    </div>
+                <div class="portfolio-info">
+                    <h3>Lisa & David</h3>
+                    <p>Beachside Reception</p>
                 </div>
+            </div>
 
-                <div class="portfolio-item" data-category="reception">
-                    <div class="portfolio-video">
-                        <img src="images/portfolio/wedding3-thumb.jpg" alt="Lisa & David Wedding">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Lisa & David</h3>
-                        <p>Beachside Reception</p>
-                    </div>
+            <div class="portfolio-item" data-category="highlights">
+                <div class="portfolio-video">
+                    <video autoplay loop muted playsinline class="portfolio-video-player">
+                        <source src="videos/Wedding_Celebration_Video_Generated.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
                 </div>
-
-                <div class="portfolio-item" data-category="highlights">
-                    <div class="portfolio-video">
-                        <img src="images/portfolio/wedding4-thumb.jpg" alt="Anna & Robert Wedding">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Anna & Robert</h3>
-                        <p>Rustic Barn Wedding</p>
-                    </div>
+                <div class="portfolio-info">
+                    <h3>Anna & Robert</h3>
+                    <p>Rustic Barn Wedding</p>
                 </div>
+            </div>
 
-                <div class="portfolio-item" data-category="ceremony">
-                    <div class="portfolio-video">
-                        <img src="images/portfolio/wedding5-thumb.jpg" alt="Grace & Thomas Wedding">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Grace & Thomas</h3>
-                        <p>Vintage Chapel Wedding</p>
-                    </div>
+            <div class="portfolio-item" data-category="ceremony">
+                <div class="portfolio-video">
+                    <video autoplay loop muted playsinline class="portfolio-video-player">
+                        <source src="videos/grace-thomas.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
                 </div>
+                <div class="portfolio-info">
+                    <h3>Grace & Thomas</h3>
+                    <p>Vintage Chapel Wedding</p>
+                </div>
+            </div>
 
-                <div class="portfolio-item" data-category="reception">
-                    <div class="portfolio-video">
-                        <img src="images/portfolio/wedding6-thumb.jpg" alt="Sophia & Daniel Wedding">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Sophia & Daniel</h3>
-                        <p>Modern City Reception</p>
-                    </div>
+            <div class="portfolio-item" data-category="reception">
+                <div class="portfolio-video">
+                    <video autoplay loop muted playsinline class="portfolio-video-player">
+                        <source src="videos/sophia-daniel.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Sophia & Daniel</h3>
+                    <p>Modern City Reception</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="about">

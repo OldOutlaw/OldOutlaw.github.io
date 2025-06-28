@@ -332,18 +332,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-5px);
 }
 
-.portfolio-video {
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-}
 
-.portfolio-video img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
 
 /* Placeholder styles for missing images */
 .portfolio-video img[src*="wedding1-thumb.jpg"],
@@ -375,6 +364,46 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     z-index: 1;
+}
+
+/* --- Corrected Portfolio Video Container Styling --- */
+.portfolio-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* IMPORTANT: Adjust this percentage based on your ACTUAL video's aspect ratio */
+    /* For 16:9 videos (most common widescreen), use 56.25% */
+    padding-top: 56.25%; /* Example: For a 16:9 video aspect ratio (9 / 16 * 100) */
+
+    /* If your videos are 4:3, use: padding-top: 75%; (3 / 4 * 100) */
+    /* If your videos are 1:1 (square), use: padding-top: 100%; (1 / 1 * 100) */
+    /* If your videos are 9:16 (vertical/portrait), use: padding-top: 177.77%; (16 / 9 * 100) */
+}
+
+/* --- Ensure the video player itself is styled to fill the above container --- */
+/* This rule should be located later in your stylesheet, ideally at the very end as instructed before. */
+.portfolio-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps the video covering the container, cropping if aspects differ */
+    display: block;
+}
+
+/* --- Make sure your hero video styling is also present and correct --- */
+.hero-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .portfolio-item:hover .portfolio-video img {
@@ -489,7 +518,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #d4af37, #f4e4bc);
     position: relative;
 }
-
+/*
 .about-image img[src*="about-photo.jpg"]::before {
     content: "Elena Rose\AWedding Videographer\AProfessional Portrait";
     position: absolute;
@@ -504,7 +533,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     z-index: 1;
 }
-
+*/
 /* Services Section */
 .services {
     padding: 100px 0;
@@ -862,3 +891,6 @@ h1, h2, h3, h4, h5, h6 {
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 3rem; }
+
+
+
