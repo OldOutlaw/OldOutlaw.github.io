@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
         radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 2px, transparent 2px),
         radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 2px, transparent 2px);
     background-size: 50px 50px;
@@ -891,6 +891,3 @@ h1, h2, h3, h4, h5, h6 {
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 3rem; }
-
-
-
